@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>René Nicolás Quijada Romero – Desarrollador Web Junior</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Página personal de René Nicolás Quijada Romero, estudiante de Matemáticas y desarrollador web junior.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1 class="logo">René Nicolás <span>Quijada Romero</span></h1>
+      <nav class="nav">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Desarrollador web junior · Estudiante de Matemáticas (UNAM)</h2>
+        <p>
+          Trabajo en el desarrollo de una plataforma editorial digital con
+          <strong>Python, MkDocs y GitHub</strong>, generando páginas de manera automática
+          a partir de datos estructurados. Me interesa especialmente el backend y
+          la construcción de sitios claros, responsivos y fáciles de mantener.
+        </p>
+        <a class="btn" href="https://github.com/nicoqr-alt" target="_blank" rel="noopener">
+          Ver mi GitHub
+        </a>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <h3>Sobre mí</h3>
+        <p>
+          Soy estudiante de Matemáticas en la UNAM (generación 2020) y actualmente
+          estoy escribiendo mi tesis. Además, desarrollo una página web para la difusión
+          de textos editados por el Instituto de Matemáticas, donde diseño pipelines
+          en Python para transformar catálogos en páginas web.
+        </p>
+        <p>
+          Disfruto proponer ideas para que el trabajo avance, conciliar puntos de vista
+          diferentes y aprender nuevas herramientas cuando el proyecto lo requiere.
+        </p>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section section-alt">
+      <div class="container">
+        <h3>Proyecto destacado</h3>
+
+        <article class="card">
+          <h4>Plataforma editorial digital del Instituto de Matemáticas (UNAM)</h4>
+          <p class="card-tag">Python · MkDocs · GitHub · CSV → Páginas estáticas</p>
+          <p>
+            Desarrollo de una página web responsiva para la difusión de libros y textos
+            del Instituto de Matemáticas. Diseñé el flujo de trabajo y pipelines en Python
+            para generar páginas automáticamente a partir de archivos CSV, reduciendo
+            el trabajo manual y los errores.
+          </p>
+          <p>
+            Trabajamos con <strong>MkDocs + Material</strong> y control de versiones en GitHub,
+            buscando mejorar frente al sitio actual (no responsivo, problemas de carga
+            de archivos y baja difusión).
+          </p>
+          <a class="card-link" href="https://github.com/nicoqr-alt/digi_papiros" target="_blank" rel="noopener">
+            Ver repositorio en GitHub
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container">
+        <h3>Contacto</h3>
+        <p>
+          Tlalpan, Ciudad de México ·
+          <a href="mailto:quijada@ciencias.mx">quijada@ciencias.mx</a>
+        </p>
+        <p>
+          También puedes encontrarme en
+          <a href="https://github.com/nicoqr-alt" target="_blank" rel="noopener">GitHub</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>
+        © <span id="year"></span> René Nicolás Quijada Romero. Construido con HTML + CSS y alojado en GitHub Pages.
+      </small>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
